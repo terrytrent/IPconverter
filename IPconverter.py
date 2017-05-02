@@ -1,5 +1,5 @@
 #!/usr/bin/python
-
+# meant to be used with python 2
 import socket
 
 
