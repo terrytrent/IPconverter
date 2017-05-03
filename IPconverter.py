@@ -6,9 +6,8 @@ this script is meant to be used with python 2
 
 import socket		                                        # import the required library
 
-x = raw_input("enter the domain you wish to convert: ")		# ask the user for a domain       			
-x = domain                                                  # stores in variable 'domain'
-
+domain = raw_input("enter the domain you wish to convert: ")    # ask the user for a domain       			
+                                              
 def IP(domain):
 		
 	domain = website		
