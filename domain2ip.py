@@ -2,6 +2,7 @@
 """
 A simple script that converts domains into IP addresses
 this script is meant to be used with python 2
+written by metr00
 """
 
 import socket           													# import the required library
