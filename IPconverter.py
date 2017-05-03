@@ -20,9 +20,9 @@ def IP(domain):         # define the function IP
 
 while True:        # to loop the IP function         
 	
-	site = raw_input("enter the website you want to convert: ")
+	host = raw_input("enter the website you want to convert: ")	#asks for user input
 	
-	IP(site)
+	IP(host)        # calls the function IP
 	
 	choice = raw_input("do you want to convert another website? y/n")
 	if choice == 'Y':
