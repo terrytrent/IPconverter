@@ -2,11 +2,13 @@
 # meant to be used with python 2
 import socket
 
+x = raw_input("enter the website: ")
+x = domain
 
-def IP():
+def IP(domain):
 		
-	website = raw_input("Enter the website: ")		# asks user for a website
-	website_IP = socket.gethostbyname(website)		# converts website to IP
+	domain = website		
+	website_IP = socket.gethostbyname(website)		
 
 
 	if website_IP != '198.105.244.28':		
@@ -15,4 +17,3 @@ def IP():
 	elif website_IP == '198.105.244.28':
 		print("website doesn't exist")
 
-IP()
