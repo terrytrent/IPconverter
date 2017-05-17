@@ -24,29 +24,12 @@ def IP(domain):         # define the function IP
 
 while True:        	# to loop the IP function         
 	
-	host = raw_input("enter the website you want to convert (ex:'domain.com')\n")	  # asks for user input
+	host = sys.argv	  # uses the commandline argument
 	
-	try:		 		    #while loop if error happens
+	try:		 		    # while loop if error happens
 		IP(host)        	# calls the function IP
 	except Exception:
-		print("error, try again\n")
+		print("usage: ./domain2ip example.com")
 		continue
 
-	choice = raw_input("\ndo you want to convert another website? (y/n): ")
 	
-	if choice == 'Y' or choice == 'y':
-		continue
-
-	elif choice == 'N' or choice == 'n':			
-		print("goodbye!")
-		sys.exit()
-
-	elif choice != 'Y' or choice != 'y' or choice != 'N' or choice != 'n':  # this else-if loop is provided if user provides invalid input			
-		while True:
-
-			again = raw_input("invalid input, try again (y/n): ")
-			if again == 'Y' or again == 'y':
-				break
-
-			elif again == 'N' or again == 'n':
-				sys.exit()
